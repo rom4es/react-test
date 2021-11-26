@@ -1,0 +1,11 @@
+.b-menu {
+    padding: 20px 40px;
+    background-color: rgb(72, 6, 179);
+}
+    .b-menu li{
+        display: inline-block;
+        margin-right: 30px;
+    }
+        .b-menu li a{
+            color: #FFF;
+        }

@@ -6,10 +6,15 @@ interface IProductProps {
   data: IProduct;
 }
 
-export const Product: React.FC<IProductProps> = props => {
+export const Product: React.FC<IProductProps> = ({data}) => {
 
   return (
-    <p>{props.data.id}</p>
+    <div className="b-product">
+      <div className="fake-img"></div>
+      <div className="name">{data.name}</div>
+      <div className="color">Цвет: {data.color}</div>
+      <div className="price">{data.price} руб.</div>
+    </div>
   );
 }
 

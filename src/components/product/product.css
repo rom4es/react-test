@@ -1,0 +1,19 @@
+.b-product{
+    width: calc(25% - 20px);
+    margin-bottom: 30px;
+}
+    .b-product .fake-img{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(161, 161, 161);
+        margin-bottom: 10px;
+    }
+    .b-product .name{
+        margin-bottom: 10px;
+    }
+    .b-product .color{
+        margin-bottom: 10px;
+    }
+    .b-product .price{
+
+    }
