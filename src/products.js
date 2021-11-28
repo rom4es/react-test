@@ -1,6 +1,4 @@
-import { IProduct, Color } from "./App";
-
-const data: IProduct[] = [
+const products = [
   {
     id: 123,
     name: "Футболка",
@@ -33,4 +31,4 @@ const data: IProduct[] = [
   },
 ];
 
-export default data;
+export default products;

@@ -7,6 +7,14 @@
   pointer-events: none;
 }
 
+.b-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgb(72, 6, 179);
+}
+
 .b-content {
   padding: 40px;
 }
