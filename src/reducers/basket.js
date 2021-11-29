@@ -9,7 +9,7 @@ const basket = (state = initialState, action) => {
         return {
           ...state,
           data: state.data.map(item => {
-            return item.id === action.payload ? {id: item.id, quantity: item.quantity + 1} : item;
+            return item.id === action.payload ? {...item, quantity: item.quantity + 1} : item;
           })
         };
       } else {

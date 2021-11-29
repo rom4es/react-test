@@ -1,0 +1,12 @@
+.b-filter{
+    margin-bottom: 30px;
+}
+    .b-filter-row{
+        margin-bottom: 6px;
+    }
+        .b-filter-row .b-select{
+            display: inline-block;
+        }
+        .b-filter-row .b-input{
+            display: inline-block;
+        }

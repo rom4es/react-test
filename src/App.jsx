@@ -6,13 +6,12 @@ import Filter from './components/filter/filter';
 import Menu from './components/menu/menu';
 import MiniBasket from './components/miniBasket/miniBasket';
 import Product from './components/product/product';
+import ProductList from './components/productList/productList';
 
 function App() {
 
   const products = useSelector((state) => state.products.data);
   const basket = useSelector((state) => state.basket.data);
-
-  const GetData = () => products.map(item => <Product key={item.id} data={item} />);
 
   return (
     <div className="page">
@@ -21,10 +20,7 @@ function App() {
         <MiniBasket products={products} basket={basket} />
       </div>
       <div className="b-content">
-        <Filter />
-        <div className="b-product-list">
-          {GetData()}
-        </div>
+        <ProductList products={products} />
       </div>
     </div>
   );
