@@ -1,0 +1,17 @@
+.b-breadcrumbs{
+    margin: 20px 40px 30px;
+}
+    .b-breadcrumbs li{
+        display: inline-block;
+    }
+    .b-breadcrumbs li:after{
+        content: "-";
+        display: inline-block;
+        margin: 0 6px;
+    }
+    .b-breadcrumbs li:last-child:after{
+        display: none;
+    }
+        .b-breadcrumbs a{
+            
+        }

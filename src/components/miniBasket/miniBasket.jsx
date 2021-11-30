@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './miniBasket.css';
 
 export const MiniBasket = (props) => {
@@ -11,7 +12,7 @@ export const MiniBasket = (props) => {
   }
 
   return (
-    <a href="#" className="mini-basket">Корзина | {getSum()} руб.</a>
+    <NavLink to="/basket" className="mini-basket">Корзина | {getSum()} руб.</NavLink>
   );
 }
 

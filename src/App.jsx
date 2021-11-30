@@ -1,28 +1,20 @@
 import React from 'react';
 import { useSelector } from 'react-redux'
-import './reset.css';
 import './App.css';
-import Filter from './components/filter/filter';
-import Menu from './components/menu/menu';
-import MiniBasket from './components/miniBasket/miniBasket';
-import Product from './components/product/product';
 import ProductList from './components/productList/productList';
+import { NavLink } from 'react-router-dom';
 
 function App() {
 
   const products = useSelector((state) => state.products.data);
-  const basket = useSelector((state) => state.basket.data);
+  const productsCount = 4;
 
   return (
-    <div className="page">
-      <div className="b-header">
-        <Menu />
-        <MiniBasket products={products} basket={basket} />
-      </div>
-      <div className="b-content">
-        <ProductList products={products} />
-      </div>
-    </div>
+    <>
+      <h2>Топ товары</h2>
+      <ProductList products={products.slice(0, productsCount)} />
+      <NavLink to="/catalog" className="btn">Все товары</NavLink>
+    </>
   );
 }
 

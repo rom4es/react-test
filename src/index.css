@@ -15,3 +15,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+h2{
+  margin-bottom: 20px;
+}
+
+.btn{
+  padding: 10px 15px;
+  background-color: rgb(72, 6, 179);
+  color: #FFF;
+  text-decoration: none;
+}

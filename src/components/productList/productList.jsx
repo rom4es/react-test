@@ -28,12 +28,9 @@ export const ProductList = (props) => {
   const filter = useSelector((state) => state.products.filter);
 
   return (
-    <div className="b-products">
-      <Filter />
       <div className="b-product-list">
         {getProductItems(props.products, filter)}
       </div>
-    </div>
   );
 }
 

@@ -8,3 +8,6 @@
         .b-menu li a{
             color: #FFF;
         }
+        .b-menu li a.active{
+            color: red;
+        }

@@ -16,3 +16,12 @@ export const colors = [
     name: "Зеленый",
   },
 ];
+
+export const getColorName = (colorValue) => {
+  const color = colors.find(item => item.value == colorValue);
+  return (color) ? color.name : '' ;
+};
+
+export const getProductByID = (products, id) => {
+  return products.find(item => item.id === id);
+};
